@@ -212,7 +212,7 @@ a:hover { text-decoration: underline; }
 
 .course-title {
   margin: 0 0 4px;
-  color: var(--text);
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.95rem;
 }
