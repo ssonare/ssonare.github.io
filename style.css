@@ -208,6 +208,8 @@ a:hover { text-decoration: underline; }
   gap: 18px 24px;
 }
 
+.course-list .placeholder-block + .placeholder-block { margin-top: 0; }
+
 .course-title {
   margin: 0 0 4px;
   color: var(--text);
