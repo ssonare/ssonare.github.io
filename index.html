@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Samruddhi Sonare — Backend Developer</title>
+<meta name="description" content="Samruddhi Sonare — Backend Developer. Distributed systems, APIs, and AI agent engineering." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">Samruddhi Sonare</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Backend Developer</p>
+    <h1>Samruddhi Sonare</h1>
+    <p class="tagline">Backend Systems &middot; APIs &amp; Data &middot; AI Agent Engineering</p>
+    <p class="hero-sub">
+      <!-- EDIT ME: a 2-3 sentence bio in your own words -->
+      I build backend systems for applications that need to be correct under pressure —
+      async APIs, database-backed services, and safety-critical logic that fails closed
+      instead of silently guessing.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <article class="project-card">
+    <div class="project-head">
+      <h3>Agentic Paper Trader</h3>
+      <a href="https://github.com/sandhya1631/agentic-paper-trader" target="_blank" rel="noopener">
+        View on GitHub &rarr;
+      </a>
+    </div>
+    <p class="project-sub">Capstone project &middot; FastAPI &middot; PostgreSQL &middot; Celery/Redis &middot; Alpaca API</p>
+    <p>
+      An autonomous paper-trading system: an LLM agent reads live market data and proposes
+      trades, which only execute after passing a deterministic risk-policy engine and human
+      approval. Built around a strict "fail closed" principle — if something can't be
+      verified, the system denies rather than guesses.
+    </p>
+    <p><strong>My contributions:</strong></p>
+    <ul>
+      <li>Idempotent order submission and reconciliation — deterministic client order IDs,
+        duplicate-order prevention, and automatic recovery from timeouts or crashes mid-submit</li>
+      <li>Risk policy implementation (cash reserve enforcement) and cycle-overlap protection
+        for the agent orchestrator</li>
+      <li>Centralized a shared constants module across the backend as a behavior-preserving
+        refactor, with full test coverage proving nothing changed</li>
+      <li>Cross-team code review — caught and verified fixes for a scheduler startup bug,
+        kill-switch enforcement gaps, and a stuck-cycle dead end before they reached production</li>
+    </ul>
+    <div class="tags">
+      <span>Python</span><span>FastAPI</span><span>Async SQLAlchemy</span>
+      <span>PostgreSQL</span><span>Celery</span><span>Redis</span><span>pytest</span>
+    </div>
+  </article>
+
+  <!-- EDIT ME: add more project cards here, same structure as above -->
+  <article class="project-card project-placeholder">
+    <h3>Add another project</h3>
+    <p>Copy the card above, swap in the title, description, and tags.</p>
+  </article>
+</section>
+
+<section id="skills" class="section section-alt">
+  <h2>Skills</h2>
+  <!-- EDIT ME: trim/expand this list to match what you actually want to claim -->
+  <div class="skill-groups">
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="tags"><span>Python</span><span>TypeScript</span><span>SQL</span></div>
+    </div>
+    <div class="skill-group">
+      <h4>Backend</h4>
+      <div class="tags">
+        <span>FastAPI</span><span>Async SQLAlchemy</span><span>PostgreSQL</span>
+        <span>REST APIs</span><span>JWT Auth</span><span>Celery / Redis</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Tools &amp; Practices</h4>
+      <div class="tags">
+        <span>Docker</span><span>Git</span><span>GitHub Actions CI/CD</span>
+        <span>pytest</span><span>Ruff</span><span>mypy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <!-- EDIT ME: replace with your real roles — title, company, dates, 1-2 line description -->
+  <div class="placeholder-block">
+    <p><strong>[Add a role]</strong> — Company &middot; Dates</p>
+    <p>One or two lines describing what you did and the impact.</p>
+  </div>
+</section>
+
+<section id="education" class="section section-alt">
+  <h2>Education</h2>
+  <!-- EDIT ME: replace with your real program -->
+  <div class="placeholder-block">
+    <p><strong>[Add your degree]</strong></p>
+    <p>[University name] &middot; [Dates] &middot; SSW695 Capstone</p>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Let's Connect</h2>
+  <p>Open to backend engineering roles and interesting collaborations.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="mailto:sonaresamruddhi96@gmail.com">Send an Email</a>
+    <a class="btn btn-secondary" href="https://github.com/ssonare" target="_blank" rel="noopener">GitHub</a>
+    <!-- EDIT ME: add LinkedIn or anything else you want listed -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Samruddhi Sonare</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
