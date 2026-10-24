@@ -200,6 +200,10 @@ a:hover { text-decoration: underline; }
   color: var(--text-dim);
 }
 
+.placeholder-block + .placeholder-block { margin-top: 16px; }
+
+.placeholder-block.filled { border-style: solid; }
+
 .placeholder-block p:first-child { color: var(--text); margin-top: 0; }
 
 .contact { text-align: center; }
