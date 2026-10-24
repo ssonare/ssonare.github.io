@@ -47,6 +47,37 @@
 
   <article class="project-card">
     <div class="project-head">
+      <h3>DevOps CI/CD Pipeline (Habit Tracker)</h3>
+      <a href="https://github.com/ppawar6/HabitTracker_byAgilePuffGirls" target="_blank" rel="noopener">
+        View on GitHub &rarr;
+      </a>
+    </div>
+    <p class="project-sub">Jenkins &middot; Docker &middot; Prometheus/Grafana &middot; DigitalOcean</p>
+    <p>
+      A full V-Model DevOps pipeline built around the Habit Tracker app: Jenkins (self-hosted
+      on DigitalOcean) checks out code, runs the pytest suite with coverage, builds a versioned
+      Docker image, auto-generates UML class/package diagrams from the source with Pyreverse,
+      and archives semantically-versioned deployment artifacts. System resource usage during
+      each build is monitored live with Prometheus and Grafana. Also includes a from-scratch
+      Nginx load balancer and name-based virtual hosting setup (both Dockerized and deployed
+      to DigitalOcean), plus a from-scratch SWOT comparison of Jenkins vs. GitHub Actions that
+      justified the tool choice.
+    </p>
+    <p>
+      Co-authored DevOps coursework with Akshay Kumar Talur Narasimmulu, documented in a
+      129-page report covering AWS deployment, SSL/domain configuration (Let's Encrypt +
+      GitHub Student Pack), and GitHub Actions self-hosted runners alongside the Jenkins
+      pipeline.
+    </p>
+    <div class="tags">
+      <span>Jenkins</span><span>Docker</span><span>Docker Compose</span><span>Nginx</span>
+      <span>Prometheus</span><span>Grafana</span><span>Pyreverse</span><span>DigitalOcean</span>
+      <span>pytest-cov</span>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
       <h3>Agentic Paper Trader</h3>
       <a href="https://github.com/sandhya1631/agentic-paper-trader" target="_blank" rel="noopener">
         View on GitHub &rarr;
@@ -251,6 +282,9 @@
 <section id="contact" class="section contact">
   <h2>Let's Connect</h2>
   <p>Open to backend engineering roles and interesting collaborations.</p>
+  <p>Outside of work, I paint — canvas is where I work out ideas and emotions that don't fit
+    into code. I've also organized tech meetups and cultural fests and mentored junior
+    students in programming and college life.</p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="mailto:ssonare@stevens.edu">Send an Email</a>
     <a class="btn btn-secondary" href="https://github.com/ssonare" target="_blank" rel="noopener">GitHub</a>
