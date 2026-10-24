@@ -192,6 +192,9 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.06em;
 }
 
+.coursework-group { margin-top: 28px; }
+.coursework-group:first-of-type { margin-top: 32px; }
+
 .placeholder-block {
   background: var(--surface);
   border: 1px dashed var(--border);
