@@ -152,21 +152,31 @@
 
   <article class="project-card">
     <div class="project-head">
-      <h3>Decision-Making Via Data Analysis Techniques</h3>
-      <a href="https://github.com/ssonare/Decision-Making-Via-Data-Analysis-Techniques" target="_blank" rel="noopener">
-        View on GitHub &rarr;
-      </a>
+      <h3>NYC Parks Inspection Program &mdash; Data Analysis &amp; Prediction</h3>
     </div>
-    <p class="project-sub">Python &middot; pandas &middot; Plotly</p>
+    <p class="project-sub">EM622-A Decision Making Via Data Analysis Techniques &middot; Python &middot; scikit-learn</p>
     <p>
-      Data analysis and visualization notebooks exploring how different chart techniques
-      support data-driven decision-making. Includes exploratory analysis of a diamond
-      pricing dataset (scatter plots of carat/price/depth, grouped bar charts by clarity
-      and cut) and a time-series analysis of economic unemployment-duration data, built
-      with pandas for data wrangling and Plotly Express for interactive visualization.
+      A full analysis of NYC's Parks Inspection Program dataset (NYC Open Data), from
+      cleaning through predictive modeling. Covers missing-value analysis, data validation
+      (standardizing seasons, coercing years/visitor counts, filtering valid condition
+      codes), and six exploratory visualizations: condition distribution, year-over-year
+      unacceptable-rate trend (with a visible COVID-19 dip), failure rate by district,
+      seasonal patterns, visitor-count trends, and inspection-volume growth.
     </p>
+    <p>
+      Built a Random Forest classifier (benchmarked against a Logistic Regression baseline)
+      to predict whether a park inspection will come back Unacceptable, using district,
+      season, inspection type, year, and visitor count as features &mdash; evaluated with
+      ROC-AUC, a confusion matrix, and 5-fold cross-validation, plus a feature-importance
+      breakdown. Inspection year and district turned out to be the strongest predictors of
+      failure, and the Random Forest's higher Recall matters operationally: missing an
+      at-risk park is costlier than a false alarm.
+    </p>
+    <p>Built with a teammate, Aditya, for Prof. Sang Won Bae's course.</p>
     <div class="tags">
-      <span>Python</span><span>pandas</span><span>Plotly Express</span><span>Data Visualization</span>
+      <span>Python</span><span>pandas</span><span>scikit-learn</span><span>Random Forest</span>
+      <span>Logistic Regression</span><span>matplotlib</span><span>seaborn</span>
+      <span>Data Visualization</span><span>Predictive Modeling</span>
     </div>
   </article>
 
@@ -329,7 +339,7 @@
       <div class="course-item placeholder-block filled">
         <p class="course-title">EM/SYS 622 &middot; Decision Making Via Data Analysis</p>
         <p>Data-driven decision-making and visualization techniques &mdash; the
-          Decision-Making Via Data Analysis Techniques project above.</p>
+          NYC Parks Inspection Program project above.</p>
       </div>
     </div>
   </div>
