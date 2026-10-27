@@ -185,6 +185,35 @@
     </div>
   </article>
 
+  <article class="project-card">
+    <div class="project-head">
+      <h3>Overleaf LaTeX Server &mdash; Domain, SSL &amp; Automated Compilation</h3>
+      <a href="https://github.com/ssonare/overleaf-latex-project" target="_blank" rel="noopener">
+        View on GitHub &rarr;
+      </a>
+    </div>
+    <p class="project-sub">Overleaf CE &middot; Docker &middot; Nginx &middot; Let's Encrypt &middot; GitHub Actions</p>
+    <p>
+      Self-hosted a full Overleaf Community Edition environment (ShareLaTeX, MongoDB, Redis
+      via the official Overleaf Toolkit) on DigitalOcean, put behind a free custom domain
+      (via the GitHub Student Developer Pack) with Nginx as a reverse proxy and a Let's
+      Encrypt SSL certificate on an automated 90-day renewal.
+    </p>
+    <p>
+      Connected the Overleaf server to GitHub and built a GitHub Actions workflow that
+      compiles the LaTeX document on every push, embeds the current Git commit hash into
+      the PDF itself (for traceability back to the exact source that produced it), and
+      uploads the compiled PDF as a build artifact. As a bonus, replaced the GitHub-hosted
+      runner with a self-hosted one (a Docker image with LaTeX and the runner pre-installed)
+      &mdash; faster compiles, zero GitHub Actions minutes used.
+    </p>
+    <div class="tags">
+      <span>LaTeX</span><span>Overleaf</span><span>Docker</span><span>Nginx</span>
+      <span>Let's Encrypt</span><span>GitHub Actions</span><span>Self-Hosted Runners</span>
+      <span>DigitalOcean</span>
+    </div>
+  </article>
+
 </section>
 
 <section id="skills" class="section section-alt">
